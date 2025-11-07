@@ -1,0 +1,20 @@
+{
+  "name": "@codefixer/diff",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "diff": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/diff": "^5.0.9",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}

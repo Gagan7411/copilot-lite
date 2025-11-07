@@ -1,0 +1,20 @@
+{
+  "name": "codefixer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter web dev\" \"pnpm --filter api dev\"",
+    "build": "pnpm --filter common build && pnpm --filter analyzer build && pnpm --filter diff build && pnpm --filter api build && pnpm --filter web build",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

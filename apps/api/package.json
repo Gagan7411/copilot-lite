@@ -1,0 +1,25 @@
+{
+  "name": "@codefixer/api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@codefixer/common": "workspace:*",
+    "@codefixer/analyzer": "workspace:*",
+    "@codefixer/diff": "workspace:*",
+    "fastify": "^4.25.2",
+    "@fastify/cors": "^8.5.0",
+    "openai": "^4.24.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "@types/node": "^20.10.6"
+  }
+}

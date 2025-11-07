@@ -1,0 +1,24 @@
+{
+  "name": "@codefixer/analyzer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.23.6",
+    "@babel/traverse": "^7.23.6",
+    "@babel/types": "^7.23.6",
+    "@typescript-eslint/typescript-estree": "^6.15.0",
+    "@codefixer/common": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.20.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
